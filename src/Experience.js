@@ -1,18 +1,16 @@
-import { OrbitControls, Environment } from "@react-three/drei";
+import { Environment } from "@react-three/drei";
 import { Suspense } from "react";
 import Box from "./Box.js";
 
-export default function Experience() {
+export default function Experience({handleClick, springProps}) {
   return (
     <>
       <color args={["#695b5b"]} attach="background" />
 
-      {/* <OrbitControls makeDefault /> */}
-
       <Environment preset="park" />
 
       <Suspense>
-        <Box scale={0.35} />
+        <Box handleClick={handleClick} springProps={springProps}/>
       </Suspense>
     </>
   );

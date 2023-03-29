@@ -18,16 +18,41 @@ body,
   padding: 15px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .tooltip {
-  line-height: 1.25;
   margin: 0;
   padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
-  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  line-height: 1.25;
   font-size: 16px;
   font-weight: 600;
   color: #fff;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
 }
 
+.btn {
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85);
+
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  cursor: pointer;
+  transition: all 250ms;
+  touch-action: manipulation;
+}
+
+.btn:hover {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(-1px);
+}
